@@ -1,0 +1,17 @@
+.p-works__slider .swiper-slide img {
+  border-radius: rem(30) 0;
+}
+
+.p-works__slider .swiper-pagination {
+  height: rem(40);
+}
+
+.p-works__slider .swiper-pagination-bullet {
+  background-color: $white !important;
+  border: $main rem(1) solid;
+  opacity: 1 !important;
+}
+
+.p-works__slider .swiper-pagination-bullet-active {
+  background: $grad !important;
+}

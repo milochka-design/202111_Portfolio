@@ -1,0 +1,77 @@
+.p-drawer__checkbox {
+  display: none;
+}
+.p-drawer__button {
+  width: rem(30);
+  height: rem(15);
+  position: relative;
+  transition: 0.3s;
+}
+
+.p-drawer__button span {
+  height: rem(2);
+  width: 75%;
+  background: $grad;
+  border-radius: rem(1);
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.p-drawer__button:before {
+  content: "";
+  height: rem(2);
+  width: 50%;
+  background: $grad;
+  border-radius: rem(1);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.p-drawer__button:after {
+  content: "";
+  height: rem(2);
+  width: 100%;
+  background: $grad;
+  border-radius: rem(1);
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+/* メニューボタンのアニメーション */
+.p-drawer__checkbox:checked ~ .p-drawer__button::before {
+  top: 50%;
+  width: 100%;
+  transform: rotate(45deg);
+}
+.p-drawer__checkbox:checked ~ .p-drawer__button::after {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+.p-drawer__checkbox:checked ~ .p-drawer__button span {
+  display: none;
+}
+
+.p-drawer__checkbox:checked ~ .p-drawer__button {
+  transform: rotate(360deg);
+}
+
+/* ドロワーメニューの装飾 */
+.p-drawer__drawer {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: 0.5s;
+  text-align: center;
+}
+
+/* ドロワーメニューの開閉 */
+.p-drawer__checkbox:checked ~ .p-drawer__drawer {
+  transform: translateX(0);
+}

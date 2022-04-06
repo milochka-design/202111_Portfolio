@@ -1,0 +1,28 @@
+.c-tags__tag1 {
+  background: $grad;
+  color: $white;
+  border-radius: rem(5) 0;
+  font-size: rem(12);
+  height: rem(24);
+  line-height: rem(24);
+  padding: 0 rem(8);
+  display: inline-block;
+}
+.c-tags__tag2 {
+  background-color: $white;
+  color: $main;
+  border: $main rem(1) solid;
+  border-radius: rem(5) 0;
+  font-size: rem(12);
+  height: rem(24);
+  line-height: rem(24);
+  padding: 0 rem(8);
+  display: inline-block;
+}
+.c-tags__tag1 a .c-tags__tag2 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}

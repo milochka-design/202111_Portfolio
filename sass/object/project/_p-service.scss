@@ -1,0 +1,29 @@
+.p-service__contents {
+  margin-top: rem(40);
+  @include mq("tab") {
+    display: flex;
+  }
+}
+
+.p-service__content {
+  @include mq("tab") {
+    width: rem(340);
+  }
+}
+
+.p-service__content + .p-service__content {
+  margin-top: rem(40);
+  @include mq("tab") {
+    margin-left: rem(40);
+    margin-top: 0;
+  }
+}
+
+.p-service__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(40);
+  @include mq("tab") {
+    margin-top: rem(60);
+  }
+}

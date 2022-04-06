@@ -1,0 +1,54 @@
+.c-column__imgbox {
+  width: rem(188);
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-column__imgbox:before {
+  display: block;
+  content: "";
+  padding-top: 100%;
+}
+
+.c-column__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c-column__title {
+  margin-top: rem(10);
+  text-align: center;
+  font-size: rem(18);
+}
+
+.c-column__text {
+  margin-top: rem(16);
+  font-size: rem(18);
+}
+
+.c-column {
+  border: rem(1) $main solid;
+  border-radius: rem(30) 0;
+  padding: rem(20);
+  position: relative;
+  background-color: $white;
+}
+
+.c-column:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: rem(10);
+  left: rem(10);
+  border-radius: rem(30) 0;
+  background-image: url(../img/bg.jpg);
+  z-index: -1;
+  background-size: 100%;
+}

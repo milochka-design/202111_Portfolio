@@ -1,0 +1,14 @@
+// インナー
+.l-inner {
+  margin: 0 auto;
+  max-width: rem(540); //状況によって変える必要があるかも
+  width: 100%;
+  height: inherit;
+  padding-right: rem(20);
+  padding-left: rem(20);
+  @include mq(tab) {
+    max-width: $l-inner + strip-unit($padding-pc) * 2;
+    padding-right: rem(25);
+    padding-left: rem(25);
+  }
+}

@@ -1,0 +1,6 @@
+.l-footer {
+  padding: 0 0 rem(40) 0;
+  @include mq("tab") {
+    padding: rem(80) 0 0 0;
+  }
+}

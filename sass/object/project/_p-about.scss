@@ -1,0 +1,26 @@
+.p-about__container {
+  background: url("../img/bg3.jpg");
+  background-size: cover;
+  padding: rem(30) rem(20);
+  position: relative;
+  border-radius: rem(30) 0;
+
+  @include mq("tab") {
+    background: url("../img/bg.jpg");
+    max-width: rem(800);
+    padding: rem(50);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.p-about__contents {
+  margin-top: rem(45);
+}
+
+.p-about__contents p + p {
+  margin-top: rem(20);
+}
+
+.p-about__button {
+  margin-top: rem(60);
+}

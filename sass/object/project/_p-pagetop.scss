@@ -1,0 +1,20 @@
+.p-pagetop {
+  background: $grad;
+  width: rem(30);
+  height: rem(30);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: rem(10);
+  right: rem(10);
+  border: rem(1) solid $white;
+  z-index: 99;
+  @include mq("tab") {
+    width: rem(50);
+    height: rem(50);
+    bottom: rem(40);
+    right: rem(40);
+  }
+}

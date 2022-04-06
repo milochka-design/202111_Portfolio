@@ -1,0 +1,31 @@
+.p-header {
+  height: rem(50);
+  color: $main;
+  background-color: rgba(255, 255, 255, 0.5);
+  @include mq("tab") {
+    height: rem(70);
+  }
+}
+
+.p-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+
+.p-header__logo {
+  font-size: rem(18);
+  font-weight: bold;
+  @include mq("tab") {
+    font-size: rem(24);
+  }
+}
+
+.p-header__pcnav {
+  height: inehrit;
+}
+
+.js-headerColor {
+  background-color: rgba(255, 255, 255, 1);
+}

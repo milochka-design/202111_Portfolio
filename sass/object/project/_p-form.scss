@@ -1,0 +1,77 @@
+.p-form__row {
+  margin-top: rem(32);
+  @include mq("tab") {
+    margin-top: rem(45);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.p-form__label {
+  font-size: rem(14);
+  letter-spacing: rem(0.7);
+  width: 100%;
+  color: $main;
+  font-weight: bold;
+}
+
+.p-form__label span {
+  font-size: rem(10);
+}
+.p-form__input.wpcf7-text,
+.wpcf7-textarea {
+  margin-top: rem(16);
+  background-color: $white;
+  color: $black;
+  width: 100%;
+  padding: rem(7) rem(16);
+  border-radius: rem(5) 0;
+  @include mq("tab") {
+    margin-top: 0;
+  }
+}
+.wpcf7-text,
+.wpcf7-email {
+  height: rem(45);
+  @include mq("tab") {
+    height: rem(40);
+  }
+}
+
+.wpcf7-textarea {
+  height: rem(250);
+  @include mq("tab") {
+    height: rem(300);
+  }
+}
+input[type="submit"] {
+  margin-top: rem(20);
+  border-radius: rem(20) 0;
+  color: $white;
+  background: $grad;
+  font-size: rem(18);
+  font-weight: bold;
+  width: rem(150);
+  height: rem(40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  /*アニメーションの指定*/
+  transition: ease 0.2s;
+  @include mq("tab") {
+    margin-top: rem(11);
+  }
+}
+
+input[type="submit"]:hover {
+  color: $main;
+  background: $white;
+  border: rem(1) $main solid;
+}
+
+.wpcf7-spinner {
+  display: none;
+}

@@ -1,0 +1,32 @@
+.p-contact {
+  background-image: url("../img/bg2.jpg");
+  background-size: cover;
+  background-position: center 80%;
+  padding: rem(40) 0;
+  @include mq("tab") {
+    background-image: none;
+    width: 50%;
+  }
+}
+
+.p-contact__inner {
+  @include mq("tab") {
+    width: rem(550);
+    padding: 0 0 0 $padding-pc;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.p-contact__text {
+  margin-top: rem(45);
+  text-align: center;
+}
+.p-contact__button {
+  margin-top: rem(40);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq("tab") {
+    margin-top: rem(45);
+  }
+}

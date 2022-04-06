@@ -1,0 +1,55 @@
+.p-spnav {
+}
+
+.p-spnav__container {
+  background: $white;
+  color: $main;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+}
+.p-spnav__nav,
+.p-spnav__item {
+  width: 100%;
+}
+
+.p-spnav__link {
+  width: 100%;
+  font-size: rem(16);
+  padding: rem(10) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: relative;
+}
+
+.p-spnav__link:hover {
+  color: $white;
+  text-shadow: $main 0 0 rem(2);
+}
+
+.p-spnav__link::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: rem(6);
+  left: 42%;
+  /*線の形状*/
+  width: 16%;
+  height: 2px;
+  background: $grad;
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+  transform: scale(0, 1); /*X方向0、Y方向1*/
+  transform-origin: center top; /*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+
+.p-spnav__link:hover::after {
+  transform: scale(1, 1); /*X方向にスケール拡大*/
+}

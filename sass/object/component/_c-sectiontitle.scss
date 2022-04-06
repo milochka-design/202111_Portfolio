@@ -1,0 +1,33 @@
+.c-sectiontitle__en {
+  color: $main;
+  opacity: 0.2;
+  text-align: center;
+  font-size: rem(56);
+  line-height: 1;
+
+  padding: 0 rem(30) rem(20);
+  width: rem(300);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq("tab") {
+    width: rem(350);
+    font-size: rem(72);
+  }
+}
+.c-sectiontitle__en--white {
+  color: $white;
+  opacity: 1;
+}
+
+.c-sectiontitle__lead {
+  color: $main;
+  text-align: center;
+  font-size: rem(18);
+  font-weight: bold;
+  margin-top: rem(-50);
+  position: relative;
+  z-index: 2;
+  @include mq("tab") {
+    font-size: rem(24);
+  }
+}

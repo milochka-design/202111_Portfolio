@@ -1,0 +1,59 @@
+.p-sub-about__inner {
+  max-width: rem(900) !important;
+}
+
+.p-sub-about__lead {
+  max-width: rem(600);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-sub-about__content {
+  margin-top: rem(60);
+  display: flex;
+  flex-direction: column;
+  @include mq("tab") {
+    margin-top: rem(80);
+    flex-direction: row;
+  }
+}
+.p-sub-about__content--rev {
+  flex-direction: column-reverse;
+}
+
+.p-sub-about__title {
+  @include mq("tab") {
+    width: 60%;
+  }
+}
+.p-sub-about__name {
+  font-size: rem(20);
+  font-weight: bold;
+}
+.p-sub-about__skill1 {
+  list-style-type: circle;
+  margin-left: rem(20);
+}
+
+.p-sub-about__skill2 {
+  margin-top: rem(20);
+}
+
+.p-sub-about__imgcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: rem(20);
+  @include mq("tab") {
+    margin-top: 0;
+    width: 40%;
+  }
+}
+
+.p-sub-about__iconbox {
+  width: rem(90);
+  padding: rem(8);
+}

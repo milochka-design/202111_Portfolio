@@ -1,0 +1,35 @@
+.p-mainview {
+  height: 100vh;
+  background-image: url("../img/bg3.jpg");
+  color: $main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  @include mq("tab") {
+    background-image: url("../img/bg.jpg");
+  }
+}
+
+.p-mainview__title {
+  font-size: rem(40);
+  font-weight: bold;
+
+  @include mq("tab") {
+    font-size: rem(72);
+  }
+}
+
+.p-mainview__subtitle {
+  font-size: rem(16);
+  @include mq("tab") {
+    font-size: rem(24);
+  }
+}
+
+.p-mainview__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(60);
+}

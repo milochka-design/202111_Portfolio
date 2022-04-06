@@ -1,0 +1,11 @@
+.p-footer {
+  @include mq("tab") {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+  }
+}
+.p-footer__container {
+  @include mq("tab") {
+    display: flex;
+  }
+}

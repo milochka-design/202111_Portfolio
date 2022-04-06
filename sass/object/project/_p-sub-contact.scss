@@ -1,0 +1,38 @@
+.p-sub-contact {
+}
+
+.p-sub-contact {
+  @include mq("tab") {
+    text-align: center;
+  }
+}
+.p-sub-contact__container {
+  border-radius: rem(30) 0;
+  margin-top: rem(40);
+  background-color: #f7f7f7;
+  padding: rem(30);
+  text-align-last: left;
+  @include mq("tab") {
+    width: rem(800);
+    margin-left: auto;
+    margin-right: auto;
+    padding: rem(40) rem(90);
+  }
+}
+
+.p-sub-contact__text {
+  text-align: center;
+}
+
+.p-sub-contact__recaptcha {
+  font-size: rem(10);
+  margin-top: rem(20);
+}
+
+.p-sub-contact__recaptcha a {
+  color: $main;
+}
+.p-sub-contact__recaptcha span {
+  font-size: rem(14);
+  vertical-align: text-bottom;
+}

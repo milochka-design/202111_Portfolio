@@ -1,0 +1,21 @@
+.p-footernavarea {
+  padding: rem(40) 0;
+  background: $grad;
+  color: $white;
+  @include mq("tab") {
+    background: none;
+    color: $main;
+  }
+}
+
+.p-footernavarea__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mq("tab") {
+    width: rem(550);
+    padding: 0 $padding-pc 0 0;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}

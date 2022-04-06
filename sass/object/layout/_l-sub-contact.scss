@@ -1,0 +1,9 @@
+.l-sub-contact {
+  background-color: $background;
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+  @include mq("tab") {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+}
